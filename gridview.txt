@@ -1,0 +1,103 @@
+child: GridView.count(crossAxisCount:3 ,
+                children: [Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[200],
+                  child: GestureDetector(
+                  child: Center(child: Text('FICTION',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.black))),
+                  onTap: () {
+                    print('FICTION DONE');
+                    Navigator.push(context, MaterialPageRoute(builder: (context) {
+                      return Books(genreName: 'fiction');
+                    }),
+                    );
+                  },
+                )
+
+                ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.white,
+                      child: GestureDetector(
+                        child: Text('COMEDY', style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.black)),
+                        onTap: () {
+                          print('COMEDY DONE');
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return Books(genreName: 'comedy');
+                          }),
+                          );
+                        },
+                      ),
+
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.lightGreen,
+                      child: GestureDetector(
+                        child: Text('ROMANCE',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.black)),
+                        onTap: () {
+                          print('Romance DONE');
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return Books(genreName: 'romance');
+                          }),
+                          );
+                        },
+                      ),
+
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.tealAccent,
+                      child: GestureDetector(
+                        child: Text('DRAMA',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.black)),
+                        onTap: () {
+                          print('drama DONE');
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return Books(genreName: 'drama');
+                          }),
+                          );
+                        },
+                      ),
+
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.deepPurpleAccent,
+                      child: GestureDetector(
+                        child: Text('SCIENCE',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.black)),
+                        onTap: () {
+                          print('science DONE',);
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return Books(genreName: 'science');
+                          }),
+                          );
+                        },
+                      ),
+
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.amber,
+                      child: GestureDetector(
+                        child: Text('COMPUTERS',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17,color: Colors.black)),
+                        onTap: () {
+                          print('computers DONE');
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return Books(genreName: 'computers');
+                          }),
+                          );
+                        },
+                      ),
+
+                  ),
+
+
+
+
+
+
+
+                ]
+
+
+
+                ),
